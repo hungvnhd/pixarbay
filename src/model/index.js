@@ -77,7 +77,6 @@ export let signInExistingUser = (email, password) => {
   loading(true);
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      alertSuccess("Sign In Successful");
       // Signed in
       const user = userCredential.user;
       // ...

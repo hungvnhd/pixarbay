@@ -9,7 +9,7 @@ export let uploadImage = /*html*/ `<div class="container-upload">
         <i class="fa-solid fa-bell"></i>
         <i class="fa-sharp fa-solid fa-circle-user"></i>
         <button class="button-upload" id="buttonUpload">
-            <i class="fa-solid fa-arrow-up-from-bracket"></i>Upload</button>
+        Upload</button>
     </div>
 </div>
 <div class="container-buttom">
