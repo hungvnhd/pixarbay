@@ -1,7 +1,7 @@
 import { login } from "../pages/login/index";
 import { signup } from "../pages/signup/index";
 import { pixabay } from "../pages/pixabay/index";
-import { myProfile } from "../pages/myProfile";
+import { myProfile } from "../pages/myProfile/index";
 import { uploadImage } from "../pages/uploadImage/index";
 import {
   validateImageInfo,
@@ -74,6 +74,11 @@ export let setActiveScreen = (screenName) => {
       upLoad.addEventListener("click", (event) => {
         event.preventDefault();
         setActiveScreen("uploadImage");
+      });
+      const myProfile1 = document.getElementById("btn-myProfile");
+      myProfile1.addEventListener("click", (event) => {
+        event.preventDefault();
+        setActiveScreen("myProfile");
       });
       getImg();
       const searchForm = document.getElementById("formSearch");

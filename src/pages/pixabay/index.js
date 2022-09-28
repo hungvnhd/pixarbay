@@ -14,7 +14,7 @@ export let pixabay = /*html*/ `<div class="homePage">
     <div class="toolBar-rieght">
         <span>Explore</span>
         <i class="fa-solid fa-bell"></i>
-        <i class="fa-sharp fa-solid fa-circle-user"></i>
+        <i class="fa-sharp fa-solid fa-circle-user" id="btn-myProfile"></i>
         <button class="button-upload" id="buttonUpload">Upload</button>
     </div>
 </div>

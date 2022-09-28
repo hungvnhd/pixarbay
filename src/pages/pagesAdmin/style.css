@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-admin{
+    width: 100%;
+    height: 100%;
+    
+}
+.container-admin .container-admin-buttom{
+    display: flex;
+}
+.container-admin .story{
+    display: inline;
+    padding: 20px;
+    background-color: rgb(210, 177, 177);
+}
+.container-admin .container-admin-left{
+    width: 20%;
+    height: 1000px;
+    /* margin: 20px; */
+    background-color: rgb(202, 200, 200);
+}
+.container-admin-left .toolbar-admin-one{
+    padding: 20px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.container-admin-left .toolbar-admin{
+    font-size: 17px;
+    padding: 20px;
+    padding-left: 40px;
+}
+.fa-solid{
+    font-size: 20px;
+    padding-right: 10px;
+}
+.container-admin .container-admin-rigth{
+    width: 80%;
+    text-align: center;
+}
+.container-admin-rigth .chu5{
+    height: 900px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #02BE6E;
+    color: white;
+    background-color: #02BE6E;
+    border-right: 1px solid gray;
+   
+}
+.container-admin-rigth .chu0{
+    padding: 20px;
+    margin: auto;
+    margin-top: 80px;
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    z-index: 10;
+}
+.container-admin-rigth .chu6{
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    z-index: 10;
+    font-size: 50px;
+    
+}
+.container-admin-rigth .nenAdmin{
+    width: 100%;
+    height: 100%;
+}
+.container-admin .logo-login{
+     width: 300px;
+    margin: 5px;
+    
+}
+.container-admin .container-admin-top{
+    background-color: white;
+    text-align: center;
+}
