@@ -36,18 +36,53 @@ export let pixabay = /*html*/ `<div class="homePage">
         coronavirus, happy birtthday, iphone wallpaper</h6>
     <p class="centent-two">Free Images by Kanenori</p>
 </div>
-<div class="images" id="imagePhoto">
-    <img src="https://tophinhanh.com/wp-content/uploads/2021/12/img_61c1a1cc0d71b.jpg" alt="photo" class="img">
-    <img src="https://recmiennam.com/wp-content/uploads/2020/09/anh-gai-xinh-facebook-6.jpg" alt="photo" class="img">
-    <img src="https://kenh14cdn.com/thumb_w/660/2017/img-0190-1500373011709.jpg" alt="photo" class="img">
-    <img src="https://kiemtientuweb.com/ckfinder/userfiles/images/anh-gai-xinh/anh-gai-xinh-41.jpg" alt="photo" class="img">
+<div class="flexbox" id="flexbox">
+<div class="item">
+    <img src="https://unsplash.it/600/400?random" />
+    
 </div>
-<div class="images">
-    <img src="https://happyshop.com.vn/wp-content/uploads/2020/06/Ao-ngu-yem-sexy-TK3085-9.jpg" alt="photo" class="img-two">
-    <img src="https://prices.vn/storage/photo/product/bo-ao-lot-day-kem-quan-lot-khe-ren-1626267006046.png" alt="photo" class="img-two">
-    <img src="https://luv.vn/wp-content/uploads/2021/02/47.jpg" alt="photo" class="img-two">
-    <img src="https://1.bp.blogspot.com/-Yq8wkwVo06A/XDikyidFbKI/AAAAAAAAANM/AjDrxPzZQeYRUkMse_Nigi77nvh2kAQDgCLcBGAs/s1600/GaiHot2k__hinh-gai-dep-sexy-girl-xinh-show-hang%2B%25281%2529.jpg" alt="photo" class="img-two">
+<div class="item">
+    <img src="https://unsplash.it/600/600?random" />
+    
 </div>
+<div class="item">
+    <img src="https://unsplash.it/720/460?random" />
+    
+</div>
+<div class="item">
+    <img src="https://unsplash.it/800/400?random" />
+    
+</div>
+<div class="item">
+    <img src="https://unsplash.it/480/700?random" />
+    
+</div>
+<div class="item">
+    <img src="https://unsplash.it/680/420?random" />
+    
+</div>
+<div class="item">
+    <img src="https://unsplash.it/740/480?random" />
+    
+</div>
+<div class="item">
+    <img src="https://unsplash.it/840/440?random" />
+   
+</div>
+<div class="item">
+    <img src="https://unsplash.it/640/380?random" />
+    
+</div>
+<div class="item">
+    <img src="https://unsplash.it/500/680?random" />
+    
+</div>
+
+</div>
+
+
+
+
 <div class="container-buttom">
     <button class="discover-more" id="discover">Discover more</button>
     <h1 class="letter-buttom">Free images, videos and music you can use anywhere</h1>
