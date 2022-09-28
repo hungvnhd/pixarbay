@@ -177,11 +177,11 @@
     flex-direction: column;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    height: 100vw;
+    height: 125vw;
 }
     .item{
       position:relative;
-      width: 25%;  
+      width: 20%;  
     }
       img{
         width: 98%;
@@ -203,13 +203,13 @@
   
   
   
-  @media ( max-width : 860px ){
+  /* @media ( max-width : 860px ){
     
     .flexbox{
       height:220vw;
     }
       .item{
-        width:50%;
+        width:20%;
       }
     }
   
@@ -231,7 +231,7 @@
         .item{
           width:100%;
         }
-      }
+      } */
 
 img:hover{
   opacity: 0.6;
