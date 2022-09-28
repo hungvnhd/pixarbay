@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-login{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.container-login .container-login-admin{
+    width: 400px;
+    padding: 40px;
+    border: 1px solid gray;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    position: absolute;
+    top: 15%;
+    left: 36%;
+    z-index: 10;
+    background-color: white;
+}
+.container-login .img-admin{
+    width: 100%;
+    height: 100%;
+}
+.container-login-admin .email-one{
+    font-size: 20px;
+    margin: 10px;
+    
+}
+.container-login-admin .loginAdmin{
+    font-size: 50px;
+}
+#email{
+    width: 300px;
+    height: 30px;
+}
+#password{
+    width: 300px;
+    height: 30px;
+}
+#loginAdmin{
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid #02BE6E;
+    border-radius: 20px;
+    background-color: #02BE6E;
+}
+#loginAdmin:hover{
+    background-color: rgb(17, 182, 17);
+}
+.container-login-admin .logo-login{
+    width: 200px;
+    margin: 5px;
+}
+.container-login-admin .loginAdmin{
+    margin-bottom: 30px;
+}
