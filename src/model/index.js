@@ -6,7 +6,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 export let authUser = {};
-import { alertSuccess } from "../view";
+import { alertSuccess, setActiveScreen } from "../view";
 import { loadImg } from "../controller";
 
 export let uploadImage = (
@@ -72,6 +72,7 @@ export let signInExistingUser = (email, password) => {
       // Signed in
       const user = userCredential.user;
       // ...
+      setActiveScreen("pixabay");
     })
     .catch((error) => {
       const errorCode = error.code;

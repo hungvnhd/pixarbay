@@ -10,23 +10,24 @@
     background-color: white;
 }
 .toolBar{
-    width: 100%;
-    height: 100px;
+    height: 60px;
 }
 .toolBar .logo{
     height: 50px;
     width: 50px;
-   margin: 20px;
-   margin-bottom: -20px;
-   /* position: absolute; */
+    margin: 20px;
+    margin-bottom: -20px;
+}
+#photo{
+  margin-left: 80px;
 }
 .toolBar .letter{
     padding: 20px;
     font-size: 20px;
     color: rgb(71, 70, 70);
-    /* margin-left: 70px;
-    margin-bottom: -50px; */
-    
+}
+#formSearch{
+  width: 900px;
 }
 .toolBar .letter:hover{
     color: rgb(167, 159, 159);
@@ -95,9 +96,6 @@
     width: 100px;
     border: none;
     border-radius: 10px;
-    position: absolute;
-    top: 370px;
-    left: 1010px;
 }
 .btn-search:hover{
     background-color: rgb(162, 162, 162);
@@ -176,12 +174,6 @@
     flex-wrap: wrap;
     height: 100vw;
 }
-    
-    
-      
-    
-  
-    
     .item{
       position:relative;
       width: 20%;  
