@@ -11,7 +11,7 @@ export let editProfile =
       </form>
       <div class="upload-rigth">
           <span>Explore</span>
-          <i class="fa-solid fa-chevron-down"></i>
+          
           <i class="fa-solid fa-bell"></i>
           <i class="fa-sharp fa-solid fa-circle-user"></i>
           <button class="button-upload" id="buttonUpload"> Upload</button>
