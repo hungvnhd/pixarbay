@@ -65,7 +65,7 @@ export let uploadImage = /*html*/ `<div class="container-upload">
             <form id="login-form">
                 <div class="box-login">
                     <p>downloads</p>
-                    <input type="number" placeholder="Please enter downloads" class="input" name="downloads">
+                    <input type="text" placeholder="Please enter nametag" class="input" name="downloads">
                     <div class="error" id="error-dowloads"></div>
                     <p>id</p>
                     <input type="number" placeholder="Please enter id" class="input" name="id">

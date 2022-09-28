@@ -5,8 +5,8 @@ export let signup =
   <div class="frani1">
       <div class="fadu1">
           <h2 class="didi1">Pixabay</h2>
-          <input class="inputt" type="text" placeholder="Tìm Kiếm"><i class="fa-solid fa-magnifying-glass "></i>
-          <button class="taidi1">Images</button>
+          <input class="inputt" type="text" placeholder="Tìm Kiếm">
+          <i class="fa-solid fa-magnifying-glass " id="search"></i>
       </div>
       <div class="fadu2">
           <p class="cuti1">Explore</p>
