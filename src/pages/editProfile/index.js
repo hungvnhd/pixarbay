@@ -14,8 +14,7 @@ export let editProfile =
           <i class="fa-solid fa-chevron-down"></i>
           <i class="fa-solid fa-bell"></i>
           <i class="fa-sharp fa-solid fa-circle-user"></i>
-          <button class="button-upload" id="buttonUpload"><i
-                  class="fa-solid fa-arrow-up-from-bracket"></i>Upload</button>
+          <button class="button-upload" id="buttonUpload"> Upload</button>
       </div>
   </div>
   <div class="container-buttom">
@@ -39,7 +38,7 @@ export let editProfile =
                       Username
                   </span>
                   <input type="text" id="enterName" placeholder="">
-                  <p>Profiles imgage</p>
+                  <p>Profile image</p>
                   <img src="https://codefly.vn/wp-content/uploads/code/2020/12/11934/projecthtml/Source%20Code/uploadImage/Profile/blank_avatar.png" alt="photo"
                       class="imgUser" id='img-user'><br>
                   <input type="file" id="input-ava">
@@ -47,33 +46,7 @@ export let editProfile =
 
               </form>
           </div>
-          <div class="container-centent">
-              <form action="">
-                  <h6 class="chu2">Online Profiles</h6>
-                  <div class="fake">
-                      <span>Please select</span>
-                      <input type="text" name="input" id="enterName">
-                      <div>
-                          <span>First name</span>
-                          <input type="text" name="input" id="enterName">
-                      </div>
-                      <div>
-                          <span>Last name</span>
-                          <input type="text" name="input" id="enterName">
-                      </div>
-                      <div>
-                          <span>City</span>
-                          <input type="text" name="input" id="enterName">
-                      </div>
-                      <div>
-                          <span>Country</span>
-                          <input type="text" name="input" id="enterName">
-                      </div>
-                      <span>Date of birth</span>
-                      <input type="text" name="input" id="enterName">
-                  </div>
-              </form>
-          </div>
+          
 
       </div>
 
