@@ -2,7 +2,7 @@ import "./style.css";
 export let myProfile = /*html*/ ` <div class="profile-nav">
 <div>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Pixabay-logo-new.svg/1200px-Pixabay-logo-new.svg.png"
-        alt="">
+        alt="" id="logo2">
 </div>
 <div class="profile-nav-right">
     <div>Explore</div>
@@ -11,7 +11,7 @@ export let myProfile = /*html*/ ` <div class="profile-nav">
             src="https://codefly.vn/wp-content/uploads/code/2020/12/11934/projecthtml/Source%20Code/uploadImage/Profile/blank_avatar.png"
             alt="" id="nav-ava">
     </div>
-    <div><button> Upload </button></div>
+    <div><button id="upload2"> Upload </button></div>
 </div>
 </div>
 

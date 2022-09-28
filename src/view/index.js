@@ -142,6 +142,16 @@ export let setActiveScreen = (screenName) => {
       if (app) {
         app.innerHTML = myProfile;
       }
+      const logo2 = document.getElementById("logo2");
+      logo2.addEventListener("click", (event) => {
+        event.preventDefault();
+        setActiveScreen("pixabay");
+      });
+      const upload2 = document.getElementById("upload2");
+      upload2.addEventListener("click", (event) => {
+        event.preventDefault();
+        setActiveScreen("uploadImage");
+      });
       displayAvaAndName("profile-name", "nav-ava", "body-ava");
       const editProfileBtn = document.getElementById("profile-edit-profile");
       editProfileBtn.onclick = () => {

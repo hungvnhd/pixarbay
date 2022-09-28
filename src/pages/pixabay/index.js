@@ -19,7 +19,7 @@ export let pixabay = /*html*/ `<div class="homePage">
     </div>
 </div>
 <div class="backcolor-container">
-    <img src="https://cdn.pixabay.com/photo/2021/02/13/13/02/red-lighthouse-6011477_1280.jpg" alt="photo" class="img-Trang">
+    <img src="https://cdn.pixabay.com/photo/2021/02/13/13/02/red-lighthouse-6011477_960_720.jpg" alt="photo" class="img-Trang">
 </div>
 <div class="top">
     <h1 class="title">Stunning free images & royalty free stock</h1>
