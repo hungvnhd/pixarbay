@@ -5,7 +5,7 @@ export let editProfile =
   <div class="upload-top">
       <form>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Pixabay-logo-new.svg/1200px-Pixabay-logo-new.svg.png"
-              alt="photo" class="logo">
+              alt="photo" class="logo" id="logo1">
 
           <input type="text" class="search" placeholder="Search Images" name="saerch" id="searchUpload">
       </form>
@@ -42,7 +42,7 @@ export let editProfile =
                   <img src="https://codefly.vn/wp-content/uploads/code/2020/12/11934/projecthtml/Source%20Code/uploadImage/Profile/blank_avatar.png" alt="photo"
                       class="imgUser" id='img-user'><br>
                   <input type="file" id="input-ava">
-                  <div><button id="newUser">Upload profile image</button></div>
+                  <div><button id="newUser">Upload profile</button></div>
 
               </form>
           </div>
@@ -52,7 +52,6 @@ export let editProfile =
 
   </div>
   <div class="save">
-      <button id="buttonSave">Save</button>
       <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
   </div>
 </div>
