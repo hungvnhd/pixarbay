@@ -2,14 +2,9 @@ import { login } from "../pages/login/index";
 import { signup } from "../pages/signup/index";
 import { pixabay } from "../pages/pixabay/index";
 import { myProfile } from "../pages/myProfile/index";
-<<<<<<< HEAD
 import { loginAdmin } from "../pages/loginAdmin/index";
-=======
-import { editProfile } from "../pages/editProfile";
->>>>>>> 8787491a2f593d5e0ee0e56e7e4954ac240df0ee
 import { uploadImage } from "../pages/uploadImage/index";
 import { pagesAdmin } from "../pages/pagesAdmin/index";
-
 import {
   validateImageInfo,
   validateRegisterInfo,
@@ -145,7 +140,6 @@ export let setActiveScreen = (screenName) => {
       if (app) {
         app.innerHTML = myProfile;
       }
-<<<<<<< HEAD
       break;
     case "loginAdmin":
       if (app) {
@@ -162,16 +156,6 @@ export let setActiveScreen = (screenName) => {
     case "pagesAdmin":
       if (app) {
         app.innerHTML = pagesAdmin;
-=======
-      const editProfileBtn = document.getElementById("profile-edit-profile");
-      editProfileBtn.onclick = () => {
-        setActiveScreen("editProfile");
-      };
-      break;
-    case "editProfile":
-      if (app) {
-        app.innerHTML = editProfile;
->>>>>>> 8787491a2f593d5e0ee0e56e7e4954ac240df0ee
       }
       break;
   }
