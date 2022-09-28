@@ -8,6 +8,12 @@ import {
 export let authUser = {};
 import { alertSuccess, loading, setActiveScreen } from "../view";
 import { loadImg } from "../controller";
+import {
+  getStorage,
+  ref,
+  uploadBytesResumable,
+  getDownloadURL,
+} from "firebase/storage";
 
 export let uploadImage = (
   downloads,
@@ -81,4 +87,79 @@ export let signInExistingUser = (email, password) => {
       const errorCode = error.code;
       const errorMessage = error.message;
     });
+};
+
+export let uploadImg = (inputId, avaId) => {
+  // const userImg = getAuth().currentUser.photoURL;
+  // document.getElementById(avaId).src;
+  const file = document.getElementById(inputId).files[0];
+  // console.log(file);
+  const storage = getStorage();
+
+  // Create the file metadata
+  /** @type {any} */
+  const metadata = {
+    contentType: "image/jpeg",
+  };
+
+  // Upload file and metadata to the object 'images/mountains.jpg'
+  const storageRef = ref(storage, "images/" + file.name);
+  const uploadTask = uploadBytesResumable(storageRef, file, metadata);
+
+  // Listen for state changes, errors, and completion of the upload.
+  uploadTask.on(
+    "state_changed",
+    (snapshot) => {
+      // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+      const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+      console.log("Upload is " + progress + "% done");
+      switch (snapshot.state) {
+        case "paused":
+          console.log("Upload is paused");
+          break;
+        case "running":
+          console.log("Upload is running");
+          break;
+      }
+    },
+    (error) => {
+      // A full list of error codes is available at
+      // https://firebase.google.com/docs/storage/web/handle-errors
+      switch (error.code) {
+        case "storage/unauthorized":
+          // User doesn't have permission to access the object
+          break;
+        case "storage/canceled":
+          // User canceled the upload
+          break;
+
+        // ...
+
+        case "storage/unknown":
+          // Unknown error occurred, inspect error.serverResponse
+          break;
+      }
+    },
+    () => {
+      // Upload completed successfully, now we can get the download URL
+      getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+        console.log("File available at", downloadURL);
+        document.getElementById(avaId).src = downloadURL;
+        // document.getElementById(avaId1).src = downloadURL;
+        updateProfile(getAuth().currentUser, {
+          photoURL: downloadURL,
+        })
+          .then(() => {
+            // Profile updated!
+            // ...
+          })
+          .catch((error) => {
+            // An error occurred
+            // ...
+          });
+
+        // userImg = downloadURL;
+      });
+    }
+  );
 };

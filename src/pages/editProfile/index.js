@@ -1,3 +1,4 @@
+import "../editProfile/style.css";
 export let editProfile =
   /*html*/
   `<div class="container-upload">

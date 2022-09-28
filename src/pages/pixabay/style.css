@@ -183,7 +183,7 @@
       position:relative;
       width: 20%;  
     }
-      img{
+      .flexbox img{
         width: 98%;
         display: block;
         transition:all .8s;

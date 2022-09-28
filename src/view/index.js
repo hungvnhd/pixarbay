@@ -2,6 +2,7 @@ import { login } from "../pages/login/index";
 import { signup } from "../pages/signup/index";
 import { pixabay } from "../pages/pixabay/index";
 import { myProfile } from "../pages/myProfile/index";
+import { editProfile } from "../pages/editProfile";
 import { uploadImage } from "../pages/uploadImage/index";
 import {
   validateImageInfo,
@@ -138,6 +139,16 @@ export let setActiveScreen = (screenName) => {
       if (app) {
         app.innerHTML = myProfile;
       }
+      const editProfileBtn = document.getElementById("profile-edit-profile");
+      editProfileBtn.onclick = () => {
+        setActiveScreen("editProfile");
+      };
+      break;
+    case "editProfile":
+      if (app) {
+        app.innerHTML = editProfile;
+      }
+      break;
   }
 };
 export let renderErrorMessage = (id, text) => {
