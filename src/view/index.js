@@ -1,6 +1,7 @@
 import { login } from "../pages/login/index";
 import { signup } from "../pages/signup/index";
 import { pixabay } from "../pages/pixabay/index";
+import { myProfile } from "../pages/myProfile";
 import { uploadImage } from "../pages/uploadImage/index";
 import {
   validateImageInfo,
@@ -9,6 +10,8 @@ import {
 } from "../controller/index";
 import swal from "sweetalert";
 import { getImg } from "../model";
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import { db } from "../index";
 export let alertSuccess = (message) => {
   return swal({
     title: "Thành Công",
@@ -73,8 +76,11 @@ export let setActiveScreen = (screenName) => {
         setActiveScreen("uploadImage");
       });
       getImg();
-      const searchInput = document.getElementById("input");
-      searchInput.addEventListener("keyup", () => {});
+      const searchForm = document.getElementById("formSearch");
+      searchForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        window.location.href = `https://pixabay.com/images/search/${searchForm.search.value}/?manual_search=1`;
+      });
 
       break;
     case "login":
@@ -123,6 +129,10 @@ export let setActiveScreen = (screenName) => {
         setActiveScreen("login");
       });
       break;
+    case "myProfile":
+      if (app) {
+        app.innerHTML = myProfile;
+      }
   }
 };
 export let renderErrorMessage = (id, text) => {
@@ -133,12 +143,10 @@ export let renderErrorMessage = (id, text) => {
   }
 };
 export let loading = (state) => {
-  let loading = document.querySelector(".loading");
-  if (loading) {
-    if (state === true) {
-      loading.classList.add("showLoading");
-    } else {
-      loading.classList.remove("showLoading");
-    }
+  let loading = document.getElementById("loading");
+  if (state == true) {
+    loading.setAttribute("style", "display:block");
+  } else {
+    loading.setAttribute("style", "display:none");
   }
 };
