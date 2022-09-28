@@ -1,37 +1,38 @@
 import "./style.css";
-export let myProfile = /*html*/ `<div class="contair">
-<div class="frame1">
-    <div class="fadi1">
-        <h2 class="tutu1">Pixabay</h2>
-        <input class="input" type="text" placeholder="Tìm Kiếm"><i class="fa-solid fa-magnifying-glass"></i>
-        <button class="taibo1">Images</button>
-    </div>
-    <div class="fadi2">
-        <p class="cutu1">Explore</p>
-        <p class="cutu1">Log in</p>
-        <p class="cutu1">Join</p>
-        <button class="taibo2"><i class="fa-solid fa-arrow-up-from-bracket"></i>Upload</button>
-    </div>
+export let myProfile = /*html*/ ` <div class="profile-nav">
+<div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Pixabay-logo-new.svg/1200px-Pixabay-logo-new.svg.png"
+        alt="">
 </div>
-<div class="frame2">
-    <div class="fadi3">
-        <h2 class="tutu2">Clear198</h2>
+<div class="profile-nav-right">
+    <div>Explore</div>
+    <div><i class="fa-solid fa-bell"></i></div>
+    <div><img
+            src="https://codefly.vn/wp-content/uploads/code/2020/12/11934/projecthtml/Source%20Code/uploadImage/Profile/blank_avatar.png"
+            alt="">
     </div>
-    <div class="fadi4">
-        <p class="tutu3">Thành viên từ Ngày 23 tháng 9 năm 2022</p>
-    </div>
-    <div class="img">
-        <img src="./z3724264216875_d4620c1e0495a00da08ac97c267188e6.jpg" alt="">
-    </div>
-    <div class="button">
-        <i class="fa-brands fa-discord an1"></i>
-        <i class="fa-solid fa-poo an1"></i>
-        <i class="fa-brands fa-slack an1"></i>
-        <i class="fa-solid fa-face-smile an1"></i>
-        <i class="fa-solid fa-cart-shopping an1"></i>
-        <button class="taibo3">Tin nhắn</button>
-        <button class="taibo3">Theo dõi</button>
-    </div>
+    <div><button> Upload </button></div>
 </div>
-<p class="titi">Chà, đó là một danh mục người dùng gọn gàng!</p>
+</div>
+
+<div class="profile-body">
+<div>
+    <h1>Profile Name</h1>
+</div>
+<div>Member since Sept. 09 2022</div>
+<div><img
+        src="https://codefly.vn/wp-content/uploads/code/2020/12/11934/projecthtml/Source%20Code/uploadImage/Profile/blank_avatar.png"
+        alt="">
+</div>
+<div class="profile-body-items">
+    <i class="fa-solid fa-image"></i>
+    <i class="fa-solid fa-download"></i>
+    <i class="fa-solid fa-heart"></i>
+    <i class="fa-solid fa-message"></i>
+    <i class="fa-solid fa-user-group"></i>
+    <button class="profile-edit-profile" id="profile-edit-profile">Edit profile</button>
+</div>
+
+
+
 </div>`;
