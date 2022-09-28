@@ -14,6 +14,7 @@ import swal from "sweetalert";
 import { getImg } from "../model";
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import { db } from "../index";
+import { editProfile } from "../pages/editProfile";
 export let alertSuccess = (message) => {
   return swal({
     title: "Thành Công",
@@ -140,6 +141,10 @@ export let setActiveScreen = (screenName) => {
       if (app) {
         app.innerHTML = myProfile;
       }
+      const editProfileBtn = document.getElementById("profile-edit-profile");
+      editProfileBtn.onclick = () => {
+        setActiveScreen("editProfile");
+      };
       break;
     case "loginAdmin":
       if (app) {
@@ -158,6 +163,10 @@ export let setActiveScreen = (screenName) => {
         app.innerHTML = pagesAdmin;
       }
       break;
+    case "editProfile":
+      if (app) {
+        app.innerHTML = editProfile;
+      }
   }
 };
 export let renderErrorMessage = (id, text) => {
