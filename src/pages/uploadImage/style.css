@@ -38,7 +38,8 @@ body{
     border: 1px solid rgba(128, 128, 128, 0.301)
 }
 .fa-circle-user{
-    font-size: 30px;
+    font-size: 20px;
+    color: rgb(9, 9, 9);
 }
 #buttonUpload{
     border: none;
@@ -50,19 +51,21 @@ body{
     margin: -1px 20px 0 15px;
     padding: 6px 27px!important;
     color: white;
+    height: 35px;
 }
 #buttonUpload:hover{
     background-color: rgb(16, 152, 16);
 }
 .container-upload .container-buttom{
-    margin: 50px;
-    
-    height: 50px;
     border-bottom: 1px solid rgb(176, 168, 168);
 }
 .container-upload .toolbar-letter{
     font-size: 20px;
     padding: 20px;
+}
+.toolbar-top{
+    margin-top: -25px;
+    margin-left: 50px;
 }
 .toolbar-letter:hover{
     color: rgb(11, 143, 237);
@@ -77,6 +80,10 @@ body{
     margin-top: 50px;
     display: flex;
     
+}
+.error{
+    color: red;
+    font-size: 10px;
 }
 .toolbar-buttum .centent-left-one{
     width: 400px;

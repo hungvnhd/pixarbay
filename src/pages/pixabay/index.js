@@ -2,7 +2,7 @@ import "./style.css";
 
 export let pixabay = /*html*/ `<div class="homePage">
 <div class="toolBar">
-    <img src="https://cdn.pixabay.com/photo/2020/05/01/09/00/pixabay-5115964_960_720.png" alt="photo" class="logo">
+    <img src="https://cdn.pixabay.com/photo/2017/01/17/14/44/pixabay-1987090_1280.png" alt="photo" class="logo" id="logo">
     <span class="letter" id="photo">Photos</span>
     <span class="letter">Illustrations</span>
     <span class="letter">Vectors</span>
@@ -14,8 +14,8 @@ export let pixabay = /*html*/ `<div class="homePage">
         <i class="fa-solid fa-chevron-down"></i>
         <i class="fa-solid fa-bell"></i>
         <i class="fa-sharp fa-solid fa-circle-user"></i>
-        <button class="button-upload" id="buttonUpload"><i
-                class="fa-solid fa-arrow-up-from-bracket"></i>Upload</button>
+        <button class="button-upload" id="buttonUpload">
+        <i class="fa-solid fa-arrow-up-from-bracket"></i>Upload</button>
     </div>
 
 

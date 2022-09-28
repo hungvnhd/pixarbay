@@ -42,14 +42,10 @@
     color: #aaa;
   }
   .taidi1 {
-    padding: 10px 30px 10px 30px;
-    background-color: white;
+    padding: 10px 30px;
     padding-bottom: 9px;
-    position: absolute;
-    margin-left: 550px;
-    margin-top: 4px;
     border: #aaa solid 1px;
-    background-color: white;
+    background-color: rgb(221, 220, 220);
     color: #aaa;
     border: none;
   }
@@ -67,6 +63,13 @@
       padding-bottom: 5px;
       padding-right: 20px;
       border: none;
+  }
+  .err{
+    color: white;
+  }
+  .taidi2:hover{
+    background-color: rgb(42, 194, 111);
+    cursor: pointer;
   }
   .fa-arrow-up-from-bracket{
       position: absolute;

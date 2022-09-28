@@ -74,6 +74,9 @@
   margin-top: 10px;
   padding-bottom: 150px;
 }
+.err{
+  color: white;
+}
 .khung{
   width: 450px;
   height: 400px;
