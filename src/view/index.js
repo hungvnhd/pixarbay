@@ -63,6 +63,9 @@ export let setActiveScreen = (screenName) => {
         app.innerHTML = pixabay;
       }
       getImg();
+      const searchInput = document.getElementById("input");
+      searchInput.addEventListener("keyup", () => {});
+
       break;
     case "login":
       if (app) {
