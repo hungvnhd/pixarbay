@@ -1,7 +1,6 @@
 {
   "name": "aothatday",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,5 +18,14 @@
     "firebase": "^9.10.0",
     "lodash": "^4.17.21",
     "sweetalert": "^2.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungvnhd/pixarbay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hungvnhd/pixarbay/issues"
+  },
+  "homepage": "https://github.com/hungvnhd/pixarbay#readme",
+  "description": ""
 }
