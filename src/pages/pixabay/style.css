@@ -9,33 +9,36 @@
     height: 100%;
     background-color: white;
 }
-.toolBar{
-    height: 60px;
+.naBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .toolBar .logo{
     height: 50px;
     width: 50px;
-    margin: 20px;
-    margin-bottom: -20px;
 }
 #photo{
   margin-left: 80px;
 }
 .toolBar .letter{
     padding: 20px;
-    font-size: 20px;
+    font-size: 14px;
     color: rgb(71, 70, 70);
 }
 #formSearch{
   width: 900px;
 }
+.toolBar{
+  display: flex;
+  align-items: center;
+}
 .toolBar .letter:hover{
     color: rgb(167, 159, 159);
 }
 .toolBar-rieght{
-    text-align: right;
-    margin-right: 20px;
-    margin-top: -40px;
+   display: flex;
+   align-items: center;
 }
 .img-Trang{
     width: 100%;
@@ -48,7 +51,9 @@
     /* margin-top: -20px; */
     color: rgb(73, 71, 71);
 }
-
+.fa-solid{
+  margin: 0px 10px;
+}
 .fa-circle-user{
     font-size: 30px;
     color: white;
