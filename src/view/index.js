@@ -169,6 +169,11 @@ export let setActiveScreen = (screenName) => {
       if (app) {
         app.innerHTML = editProfile;
       }
+      const logo1 = document.getElementById("logo1");
+      logo1.addEventListener("click", (event) => {
+        event.preventDefault();
+        setActiveScreen("pixabay");
+      });
       const editProfileImg = document.getElementById("form-ava");
       editProfileImg.addEventListener("submit", (event) => {
         event.preventDefault();
