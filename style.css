@@ -3,5 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.grid-item { width: 200px; }
-.grid-item--width2 { width: 400px; }
+.showLoading {
+    display: block;
+}
+.loading {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: none;
+}

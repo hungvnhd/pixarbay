@@ -16,7 +16,7 @@ export let validateImageInfo = (
   previewURL
 ) => {
   if (!downloads) {
-    renderErrorMessage("error-dowloads", "Please enter your downloads");
+    renderErrorMessage("error-dowloads", "Please enter your nametag");
   } else {
     renderErrorMessage("error-dowloads", "");
   }

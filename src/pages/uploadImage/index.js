@@ -2,10 +2,7 @@ import "./style.css";
 
 export let uploadImage = /*html*/ `<div class="container-upload">
 <div class="upload-top">
-    <form>
-        <img src="https://cdn.pixabay.com/photo/2017/01/17/14/44/pixabay-1987090_1280.png" alt="photo" class="logo">
-        <input type="text" class="search" placeholder="Search Images" name="saerch" id="searchUpload">
-    </form>
+        <img src="https://cdn.pixabay.com/photo/2017/01/17/14/44/pixabay-1987090_1280.png" alt="photo" class="logo" id="logo">
     <div class="upload-rigth">
         <span>Explore</span>
         <i class="fa-solid fa-chevron-down"></i>
@@ -24,7 +21,6 @@ export let uploadImage = /*html*/ `<div class="container-upload">
         <span class="toolbar-letter">Following</span>
         <span class="toolbar-letter">Messages</span>
         <span class="toolbar-letter">Settings</span>
-        <span class="toolbar-letter-one">My profile</span>
     </div>
     <div class="toolbar-buttum">
         <div class="centent-left">
@@ -64,7 +60,7 @@ export let uploadImage = /*html*/ `<div class="container-upload">
             <h1>up load image</h1>
             <form id="login-form">
                 <div class="box-login">
-                    <p>downloads</p>
+                    <p>nametag</p>
                     <input type="text" placeholder="Please enter nametag" class="input" name="downloads">
                     <div class="error" id="error-dowloads"></div>
                     <p>id</p>

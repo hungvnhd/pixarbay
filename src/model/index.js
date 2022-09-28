@@ -6,7 +6,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 export let authUser = {};
-import { alertSuccess, setActiveScreen } from "../view";
+import { alertSuccess, loading, setActiveScreen } from "../view";
 import { loadImg } from "../controller";
 
 export let uploadImage = (
@@ -52,10 +52,11 @@ export let signUpNewUser = (email, password) => {
   const auth = getAuth();
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      alertSuccess("thanh cong");
+      alertSuccess("Đăng kí thành công");
       // Signed in
       const user = userCredential.user;
       // ...
+      setActiveScreen("login");
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -66,12 +67,14 @@ export let signUpNewUser = (email, password) => {
 
 export let signInExistingUser = (email, password) => {
   const auth = getAuth();
+  loading(true);
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       alertSuccess("Sign In Successful");
       // Signed in
       const user = userCredential.user;
       // ...
+      loading(false);
       setActiveScreen("pixabay");
     })
     .catch((error) => {
