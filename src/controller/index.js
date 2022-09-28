@@ -122,8 +122,12 @@ export let validateSignInUser = (email, password) => {
 };
 
 export let loadImg = (src) => {
-  const images = document.getElementById("imagePhoto");
+  const images = document.getElementById("flexbox");
   let div = document.createElement("div");
-  div.innerHTML = ` <img src="${src}" alt="photo" class="img">`;
+  div.classList.add("item");
+  div.innerHTML = ` <img src="${src}" />`;
   images.appendChild(div);
+  div.onclick = () => {
+    window.location.href = `${src}`;
+  };
 };
