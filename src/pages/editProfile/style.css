@@ -22,10 +22,7 @@ body{
  margin: 10px;
  
 }
-.fa-solid{
-  padding: 10px;
-  color: rgb(86, 82, 82);
-}
+
 .fa-solid:hover{
   color: rgb(217, 186, 186);
 }
@@ -43,15 +40,17 @@ body{
 .fa-circle-user{
   font-size: 30px;
 }
-#buttonUpload{
-  border: 1px solid rgb(9, 200, 9);
-  background-color: rgb(9, 200, 9);
-  font-size: 20px;
-  border-radius: 30px;
-  padding: 3px;
-  width: 150px;
-  height: 50px;
+#newUser{
+    border: 1px solid green;
+    background-color: green;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 3px;
+    width: 150px;
+    height: 50px;
+    
 }
+
 #buttonUpload:hover{
   background-color: rgb(16, 152, 16);
 }
