@@ -65,7 +65,8 @@
       border: none;
   }
   .err{
-    color: white;
+    color: red;
+    font-size: 12px;
   }
   .taidi2:hover{
     background-color: rgb(42, 194, 111);
