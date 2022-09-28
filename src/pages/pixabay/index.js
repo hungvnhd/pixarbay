@@ -38,7 +38,7 @@ export let pixabay = /*html*/ `<div class="homePage">
 </div>
 <div class="flexbox" id="flexbox">
 <div class="item">
-    <img src="https://unsplash.it/600/400?random" />
+    <img src="https://unsplash.it/600/400?random"  />
     
 </div>
 <div class="item">
