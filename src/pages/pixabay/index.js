@@ -1,22 +1,24 @@
 import "./style.css";
 
 export let pixabay = /*html*/ `<div class="homePage">
-<div class="naBar">
-    <div class="toolBar">
-        <img src="https://cdn.pixabay.com/photo/2017/01/17/14/44/pixabay-1987090_1280.png" alt="photo" class="logo" id="logo">
-        <span class="letter" id="photo">Photos</span>
-        <span class="letter">Illustrations</span>
-        <span class="letter">Vectors</span>
-        <span class="letter"> Videos</span>
-        <span class="letter">Music</span>
-        <span class="letter">Sound Effects</span>
-    </div>
+<div class="toolBar">   
+    <img src="https://cdn.pixabay.com/photo/2017/01/17/14/44/pixabay-1987090_1280.png" alt="photo" class="logo" id="logo">
+    <span class="letter" id="photo">Photos</span>
+    <span class="letter">Illustrations</span>
+    <span class="letter">Vectors</span>
+    <span class="letter"> Videos</span>
+    <span class="letter">Music</span>
+    <span class="letter">Sound Effects</span>
     <div class="toolBar-rieght">
         <span>Explore</span>
+        <i class="fa-solid fa-chevron-down"></i>
         <i class="fa-solid fa-bell"></i>
         <i class="fa-sharp fa-solid fa-circle-user"></i>
-        <button class="button-upload" id="buttonUpload">Upload</button>
+        <button class="button-upload" id="buttonUpload">
+        <i class="fa-solid fa-arrow-up-from-bracket"></i>Upload</button>
     </div>
+
+
 </div>
 <div class="backcolor-container">
     <img src="https://cdn.pixabay.com/photo/2021/02/13/13/02/red-lighthouse-6011477_1280.jpg" alt="photo" class="img-Trang">
