@@ -12,7 +12,7 @@ export let login =
           <p class="cuti1">Explore</p>
           <p class="cuti1">Log in</p>
           <p class="cuti1">Join</p>
-          <button class="taidi2" id="btn-upload">Upload</button><i class="fa-solid fa-arrow-up-from-bracket"></i>
+          <button class="taidi2" id="btn-upload">Upload</button>
       </div>
   </div>
   <div class="franit2">
