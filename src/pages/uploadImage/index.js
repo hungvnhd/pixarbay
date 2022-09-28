@@ -2,7 +2,7 @@ import "./style.css";
 
 export let uploadImage = /*html*/ `<div class="container-upload">
 <div class="upload-top">
-        <img src="https://cdn.pixabay.com/photo/2017/01/17/14/44/pixabay-1987090_1280.png" alt="photo" class="logo" id="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Pixabay-logo-new.svg/1200px-Pixabay-logo-new.svg.png" alt="photo" class="logo" id="logo">
     <div class="upload-rigth">
         <span>Explore</span>
         <i class="fa-solid fa-chevron-down"></i>
