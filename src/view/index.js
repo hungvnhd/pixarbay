@@ -2,7 +2,10 @@ import { login } from "../pages/login/index";
 import { signup } from "../pages/signup/index";
 import { pixabay } from "../pages/pixabay/index";
 import { myProfile } from "../pages/myProfile/index";
+import { loginAdmin } from "../pages/loginAdmin/index";
 import { uploadImage } from "../pages/uploadImage/index";
+import { pagesAdmin } from "../pages/pagesAdmin/index";
+
 import {
   validateImageInfo,
   validateRegisterInfo,
@@ -138,6 +141,24 @@ export let setActiveScreen = (screenName) => {
       if (app) {
         app.innerHTML = myProfile;
       }
+      break;
+    case "loginAdmin":
+      if (app) {
+        app.innerHTML = loginAdmin;
+      }
+      const loginAdminforn = document.getElementById("login-admin");
+      loginAdminforn.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const emailAdmin = loginAdminforn.email.value;
+        const passwordAdmin = loginAdminforn.password.value;
+        validateSignInUser(emailAdmin, passwordAdmin);
+      });
+      break;
+    case "pagesAdmin":
+      if (app) {
+        app.innerHTML = pagesAdmin;
+      }
+      break;
   }
 };
 export let renderErrorMessage = (id, text) => {

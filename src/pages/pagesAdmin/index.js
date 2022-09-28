@@ -24,20 +24,39 @@ export let pagesAdmin = /*html*/ `<div class="container-admin">
 
     </div>
     <div class="container-admin-rigth">
-        <img src="https://st.quantrimang.com/photos/image/2019/11/19/background-3d-powerpoint-38.jpg" alt="photo" class="nenAdmin">
         <h3 class="chu6">LIST CREATE GENNERRALS</h3> 
         <div class="chu0">
-            <span class="chu5">STT</span>
-            <span class="chu5">ID</span>
-            <span class="chu5">Name</span>
-            <span class="chu5">content</span>
-            <span class="chu5">Comment</span>
-            <span class="chu5">Outhors</span>
-            <span class="chu5">Status</span>
-            <span class="chu5">Category</span>
-            <span class="chu5">Year</span>
-            <span class="chu5">Image</span>
-            <span class="chu5">Option</span>
+        <table class="table caption-top">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+            
         </div>
     </div>
 </div>

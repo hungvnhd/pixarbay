@@ -41,34 +41,10 @@
     width: 80%;
     text-align: center;
 }
-.container-admin-rigth .chu5{
-    height: 900px;
-    margin-top: 20px;
-    font-size: 20px;
-    padding: 10px;
-    border: 1px solid #02BE6E;
-    color: white;
-    background-color: #02BE6E;
-    border-right: 1px solid gray;
-   
-}
 .container-admin-rigth .chu0{
     padding: 20px;
-    margin: auto;
-    margin-top: 80px;
-    position: absolute;
-    top: 15%;
-    left: 32%;
-    z-index: 10;
-}
-.container-admin-rigth .chu6{
-    color: white;
-    position: absolute;
-    top: 15%;
-    left: 40%;
-    z-index: 10;
-    font-size: 50px;
-    
+    justify-content: center;
+    display: flex;
 }
 .container-admin-rigth .nenAdmin{
     width: 100%;

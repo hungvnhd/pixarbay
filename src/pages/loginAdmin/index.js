@@ -6,12 +6,12 @@ export let loginAdmin =
 <div class="container-login-admin">
    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Pixabay-logo.svg/1280px-Pixabay-logo.svg.png" alt="photo" class="logo-login">
     <h2 class="loginAdmin">Login Admin</h2>
-    <form action="login">
+    <form id="login-admin">
         <div>
             <h5 class="email-one">Email</h5>
-            <input type="email" name="email" placeholder=" enter your email" id="email"></div>
+            <input type="email" name="email" placeholder=" enter your email" id="email-admin"></div>
             <h5 class="email-one">Password</h5>
-            <input type="password" name="password" placeholder="enter your password" id="password">
+            <input type="password" name="password" placeholder="enter your password" id="password-admin">
             <div><button id="loginAdmin">Login</button></div>
         </div>
         
