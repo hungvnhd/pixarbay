@@ -2,8 +2,8 @@ import "./style.css";
 
 export let pixabay = /*html*/ `<div class="homePage">
 <div class="toolBar">
-    <img src="./img/Pixabay-logo-new.svg.png" alt="photo" class="logo">
-    <span class="letter">Photos</span>
+    <img src="https://cdn.pixabay.com/photo/2020/05/01/09/00/pixabay-5115964_960_720.png" alt="photo" class="logo">
+    <span class="letter" id="photo">Photos</span>
     <span class="letter">Illustrations</span>
     <span class="letter">Vectors</span>
     <span class="letter"> Videos</span>
