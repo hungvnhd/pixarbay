@@ -1,6 +1,7 @@
 import { login } from "../pages/login/index";
 import { signup } from "../pages/signup/index";
 import { pixabay } from "../pages/pixabay/index";
+import { myProfile } from "../pages/myProfile";
 import { uploadImage } from "../pages/uploadImage/index";
 import {
   validateImageInfo,
@@ -69,18 +70,17 @@ export let setActiveScreen = (screenName) => {
       if (app) {
         app.innerHTML = pixabay;
       }
-<<<<<<< HEAD
-      let suggestions;
-=======
       const upLoad = document.getElementById("buttonUpload");
       upLoad.addEventListener("click", (event) => {
         event.preventDefault();
         setActiveScreen("uploadImage");
       });
->>>>>>> 04ecb1db51a51938e3c48e1eae9fb894784826a5
       getImg();
-      const searchInput = document.getElementById("input");
-      searchInput.addEventListener("keyup", () => {});
+      const searchForm = document.getElementById("formSearch");
+      searchForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        window.location.href = `https://pixabay.com/images/search/${searchForm.search.value}/?manual_search=1`;
+      });
 
       break;
     case "login":
@@ -129,6 +129,10 @@ export let setActiveScreen = (screenName) => {
         setActiveScreen("login");
       });
       break;
+    case "myProfile":
+      if (app) {
+        app.innerHTML = myProfile;
+      }
   }
 };
 export let renderErrorMessage = (id, text) => {
@@ -139,12 +143,10 @@ export let renderErrorMessage = (id, text) => {
   }
 };
 export let loading = (state) => {
-  let loading = document.querySelector(".loading");
-  if (loading) {
-    if (state === true) {
-      loading.classList.add("showLoading");
-    } else {
-      loading.classList.remove("showLoading");
-    }
+  let loading = document.getElementById("loading");
+  if (state == true) {
+    loading.setAttribute("style", "display:block");
+  } else {
+    loading.setAttribute("style", "display:none");
   }
 };
