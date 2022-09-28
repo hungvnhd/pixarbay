@@ -34,15 +34,15 @@ export let editProfile =
       <div class="container-buttom-two-left">
           <div class="container-user-name">
               <h6 class="chu2">Personal Data</h6>
-              <form action="user">
+              <form id="form-ava">
                   <span>
                       Username
                   </span>
                   <input type="text" id="enterName" placeholder="">
                   <p>Profiles imgage</p>
-                  <img src="./z3756413681977_c41588d7458c2f3d2d391e2a4e36865d.jpg" alt="photo"
-                      class="imgUser"><br>
-                  <input type="file">
+                  <img src="https://codefly.vn/wp-content/uploads/code/2020/12/11934/projecthtml/Source%20Code/uploadImage/Profile/blank_avatar.png" alt="photo"
+                      class="imgUser" id='img-user'><br>
+                  <input type="file" id="input-ava">
                   <div><button id="newUser">Upload profile image</button></div>
 
               </form>
@@ -82,7 +82,5 @@ export let editProfile =
       <button id="buttonSave">Save</button>
       <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
   </div>
-
-
 </div>
 `;

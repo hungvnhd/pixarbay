@@ -10,9 +10,10 @@ import {
   validateRegisterInfo,
   validateSignInUser,
 } from "../controller/index";
+import { uploadImg, displayAvaAndName } from "../model";
 import swal from "sweetalert";
 import { getImg } from "../model";
-import { collection, addDoc, getDocs } from "firebase/firestore";
+import { collection, addDoc, getDocs, documentId } from "firebase/firestore";
 import { db } from "../index";
 import { editProfile } from "../pages/editProfile";
 export let alertSuccess = (message) => {
@@ -141,6 +142,7 @@ export let setActiveScreen = (screenName) => {
       if (app) {
         app.innerHTML = myProfile;
       }
+      displayAvaAndName("profile-name", "nav-ava", "body-ava");
       const editProfileBtn = document.getElementById("profile-edit-profile");
       editProfileBtn.onclick = () => {
         setActiveScreen("editProfile");
@@ -167,6 +169,12 @@ export let setActiveScreen = (screenName) => {
       if (app) {
         app.innerHTML = editProfile;
       }
+      const editProfileImg = document.getElementById("form-ava");
+      editProfileImg.addEventListener("submit", (event) => {
+        event.preventDefault();
+        console.log(123123);
+        uploadImg("input-ava", "img-user", "enterName");
+      });
   }
 };
 export let renderErrorMessage = (id, text) => {

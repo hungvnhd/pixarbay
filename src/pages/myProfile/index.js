@@ -9,7 +9,7 @@ export let myProfile = /*html*/ ` <div class="profile-nav">
     <div><i class="fa-solid fa-bell"></i></div>
     <div><img
             src="https://codefly.vn/wp-content/uploads/code/2020/12/11934/projecthtml/Source%20Code/uploadImage/Profile/blank_avatar.png"
-            alt="">
+            alt="" id="nav-ava">
     </div>
     <div><button> Upload </button></div>
 </div>
@@ -17,12 +17,12 @@ export let myProfile = /*html*/ ` <div class="profile-nav">
 
 <div class="profile-body">
 <div>
-    <h1>Profile Name</h1>
+    <h1 id="profile-name">Profile Name</h1>
 </div>
 <div>Member since Sept. 09 2022</div>
 <div><img
         src="https://codefly.vn/wp-content/uploads/code/2020/12/11934/projecthtml/Source%20Code/uploadImage/Profile/blank_avatar.png"
-        alt="">
+        alt="" id="body-ava">
 </div>
 <div class="profile-body-items">
     <i class="fa-solid fa-image"></i>

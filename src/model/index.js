@@ -4,6 +4,7 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  updateProfile,
 } from "firebase/auth";
 export let authUser = {};
 import { alertSuccess, loading, setActiveScreen } from "../view";
@@ -89,7 +90,8 @@ export let signInExistingUser = (email, password) => {
     });
 };
 
-export let uploadImg = (inputId, avaId) => {
+export let uploadImg = (inputId, avaId, nameId) => {
+  loading(true);
   // const userImg = getAuth().currentUser.photoURL;
   // document.getElementById(avaId).src;
   const file = document.getElementById(inputId).files[0];
@@ -147,10 +149,14 @@ export let uploadImg = (inputId, avaId) => {
         document.getElementById(avaId).src = downloadURL;
         // document.getElementById(avaId1).src = downloadURL;
         updateProfile(getAuth().currentUser, {
+          displayName: `${document.getElementById(nameId).value}`,
           photoURL: downloadURL,
         })
           .then(() => {
+            loading(false);
+            setActiveScreen("myProfile");
             // Profile updated!
+
             // ...
           })
           .catch((error) => {
@@ -162,4 +168,15 @@ export let uploadImg = (inputId, avaId) => {
       });
     }
   );
+};
+
+export let displayAvaAndName = (avaId1, avaId2, avaId3) => {
+  const auth = getAuth();
+  const user = auth.currentUser;
+
+  console.log(user.displayName, user.photoURL);
+
+  document.getElementById(avaId1).innerText = user.displayName;
+  document.getElementById(avaId2).src = user.photoURL;
+  document.getElementById(avaId3).src = user.photoURL;
 };
