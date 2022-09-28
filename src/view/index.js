@@ -9,6 +9,8 @@ import {
 } from "../controller/index";
 import swal from "sweetalert";
 import { getImg } from "../model";
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import { db } from "../index";
 export let alertSuccess = (message) => {
   return swal({
     title: "Thanh cong",
@@ -62,6 +64,7 @@ export let setActiveScreen = (screenName) => {
       if (app) {
         app.innerHTML = pixabay;
       }
+      let suggestions;
       getImg();
       const searchInput = document.getElementById("input");
       searchInput.addEventListener("keyup", () => {});
