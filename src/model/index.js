@@ -25,6 +25,7 @@ export let uploadImage = (
   pageURL,
   previewURL
 ) => {
+  alertSuccess("Thêm ảnh thành công");
   addDoc(collection(db, "pixabay"), {
     downloads: downloads,
     id: id,
