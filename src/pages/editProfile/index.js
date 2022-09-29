@@ -13,7 +13,9 @@ export let editProfile =
           <span>Explore</span>
           
           <i class="fa-solid fa-bell"></i>
-          <i class="fa-sharp fa-solid fa-circle-user"></i>
+          <img
+        src="https://codefly.vn/wp-content/uploads/code/2020/12/11934/projecthtml/Source%20Code/uploadImage/Profile/blank_avatar.png"
+        alt="" id="edit-nav-ava">
           <button class="button-upload" id="buttonUpload"> Upload</button>
       </div>
   </div>

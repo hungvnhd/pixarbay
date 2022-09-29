@@ -57,7 +57,7 @@ export let uploadImage = /*html*/ `<div class="container-upload">
         </div>
         <div class="centent-right">
             <div class="container"></div>
-            <h1>up load image</h1>
+            <h1>Upload image</h1>
             <form id="login-form">
                 <div class="box-login">
                     <p>nametag</p>
