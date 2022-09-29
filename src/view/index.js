@@ -10,7 +10,7 @@ import {
   validateRegisterInfo,
   validateSignInUser,
 } from "../controller/index";
-import { uploadImg, displayAvaAndName } from "../model";
+import { uploadImg, displayAvaAndName, displayAvaOnly } from "../model";
 import swal from "sweetalert";
 import { getImg } from "../model";
 import { collection, addDoc, getDocs, documentId } from "firebase/firestore";
@@ -74,6 +74,8 @@ export let setActiveScreen = (screenName) => {
       if (app) {
         app.innerHTML = pixabay;
       }
+
+      getImg();
       const upLoad = document.getElementById("buttonUpload");
       upLoad.addEventListener("click", (event) => {
         event.preventDefault();
@@ -84,7 +86,7 @@ export let setActiveScreen = (screenName) => {
         event.preventDefault();
         setActiveScreen("myProfile");
       });
-      getImg();
+
       const searchForm = document.getElementById("formSearch");
       searchForm.addEventListener("submit", (event) => {
         event.preventDefault();
@@ -179,6 +181,7 @@ export let setActiveScreen = (screenName) => {
       if (app) {
         app.innerHTML = editProfile;
       }
+
       const logo1 = document.getElementById("logo1");
       logo1.addEventListener("click", (event) => {
         event.preventDefault();
