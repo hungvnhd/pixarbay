@@ -147,6 +147,7 @@ export let uploadImg = (inputId, avaId, nameId) => {
         console.log("File available at", downloadURL);
         document.getElementById(avaId).src = downloadURL;
         // document.getElementById(avaId1).src = downloadURL;
+
         updateProfile(getAuth().currentUser, {
           displayName: `${document.getElementById(nameId).value}`,
           photoURL: downloadURL,
@@ -178,4 +179,10 @@ export let displayAvaAndName = (avaId1, avaId2, avaId3) => {
   document.getElementById(avaId1).innerText = user.displayName;
   document.getElementById(avaId2).src = user.photoURL;
   document.getElementById(avaId3).src = user.photoURL;
+};
+export let displayAvaOnly = (avaId1, avaId2) => {
+  const auth = getAuth();
+  const user = auth.currentUser;
+  document.getElementById(avaId1).src = user.photoURL;
+  document.getElementById(avaId2).src = user.photoURL;
 };
