@@ -35,4 +35,8 @@ export let myProfile = /*html*/ ` <div class="profile-nav">
 
 
 
+</div>
+<div class="profile-images">
+<img src="https://cdn.pixabay.com/photo/2022/05/21/09/30/cat-7211080__340.jpg" alt="">
+<img src="https://cdn.pixabay.com/photo/2022/02/03/18/49/blossoms-6991112_960_720.jpg" alt="">
 </div>`;

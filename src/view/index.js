@@ -181,6 +181,7 @@ export let setActiveScreen = (screenName) => {
       if (app) {
         app.innerHTML = editProfile;
       }
+      displayAvaOnly("img-user", "edit-nav-ava");
 
       const logo1 = document.getElementById("logo1");
       logo1.addEventListener("click", (event) => {

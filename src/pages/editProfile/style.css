@@ -127,3 +127,9 @@ body{
   border: 1px solid rgb(185, 180, 180);
   text-align: center;
 }
+
+#edit-nav-ava{
+  width: 40px;
+  height:40px;
+  border-radius: 50%;
+}
